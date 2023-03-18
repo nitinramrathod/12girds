@@ -1,0 +1,55 @@
+.LowerFooterWraper {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    background: #F9F9F9;
+}
+
+.termConWraper {
+    padding-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.termCon {
+    font-size: 14px;
+    color: #5A5A5A;
+    position: relative;
+
+}
+
+.copyright {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 12px;
+    width: 85%;
+}
+
+
+
+/* media query start here  */
+
+@media screen and (min-width: 480px) {
+
+    .termConWraper {
+        padding: 0;
+    }
+    .copyright {
+        padding: 0;
+        padding-left: 10px;
+        display: flex;
+        text-align: start;
+        justify-content: flex-start;
+    }
+    .termCon:first-child::after{
+        content: "|";
+        position: absolute;
+        right: -13px;
+
+    }
+
+}
